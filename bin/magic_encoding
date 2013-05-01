@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# $: << 'lib'
 
 # A simple tool to prepend magic comments for encoding to multiple ".rb" files
 

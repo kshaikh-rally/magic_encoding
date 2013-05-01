@@ -1,16 +1,7 @@
 = Magic encoding
 
 Magic Encoding is a little tool that allows you to quickly 
-add or modify the magic comments that indicate source file 
-encoding for an entire directory structure, please note that 
-this tool only sets the comments, and does not perform any 
-file encoding conversion whatsoever.
-
-If you are looking for a way to convert files to a specific encoding, check out iconv (GNU)
-
-I originally wrote this to get rid of "invalid multibyte char (US-ASCII)" 
-errors when writing strings containing non ascii characters like éöàüèä
-in ruby on rails controllers
+add or modify the Rally Copyright line in your ruby source code.
 
 == Installation
 
@@ -24,10 +15,10 @@ you can call the tool from the console with default parameters like so
 
 this will prepend every ".rb" file in the working directory (recursively) with the following line :
 
-  # -*- encoding : utf-8 -*-
+  # Copyright 2002-2013 Rally Software Development Corp. All Rights Reserved.
 
 Notes : 
-- existing magic comments are replaced
+- existing magic copyrights are replaced
 - the rest of the file remains unchanged
   
 you can pass options to the tool to specify the desired encoding and the path where you want the tool to run, for example :
@@ -36,5 +27,11 @@ you can pass options to the tool to specify the desired encoding and the path wh
 
 For more information on ruby >= 1.9 encoding features, check out http://blog.grayproductions.net/articles/ruby_19s_three_default_encodings
 
+== Build the Gem
+gem build magic_encoding.gemspec 
 
+== Publish the Gem to Geminabox
+gem install geminabox --source http://int-ububld1:9292
+gem inabox -g http://int-ububld1:9292 magic_encoding-0.0.3.gem -o
 
+Be sure to increment the Gem version if a new version is built.

@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-
+# Copyright 2002-2013 Rally Software Development Corp. All Rights Reserved.
 # A simple library to prepend magic comments for encoding to multiple ".rb" files
 
 module AddMagicComment
@@ -16,13 +15,13 @@ module AddMagicComment
     directory = options[1] || Dir.pwd
 
     prefix = "-*- encoding : #{encoding} -*-\n"
+    prefix = "Copyright 2002-2013 Rally Software Development Corp. All Rights Reserved.\n"
 
     # TODO : add options for recursivity (and application of the script to a single file)
 
 		extensions = {
 			'rb' => '# {text}',
 			'rake' => '# {text}',
-			'haml' => '-# {text}',
 		}
 
 		count = 0
@@ -34,7 +33,7 @@ module AddMagicComment
 				lines = file.readlines
 
 				# remove current encoding comment(s)
-        while lines[0].match(/^-?# ?(-\*-)? ?(en)?coding/)
+        while lines[0].match(/Rally Software Development Corp/)
           lines.shift
         end
 
