@@ -32,6 +32,6 @@ gem build magic_encoding.gemspec
 
 == Publish the Gem to Geminabox
   gem install geminabox --source http://int-ububld1:9292
-  gem inabox -g http://int-ububld1:9292 magic_encoding-0.0.3.gem -o
+  gem inabox -g http://int-ububld1:9292 magic_encoding-0.0.5.gem -o
 
 Be sure to increment the Gem version if a new version is built.
