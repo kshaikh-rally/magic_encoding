@@ -19,3 +19,7 @@ Support for hash bangs #!.  The copyright is placed on the second line.
 ## 0.0.5 (May 8, 2013)
 
 Added support for encoding on the first line.
+
+## 0.0.6 (May 9, 2013)
+
+Updated author to Rally Software Development Corp.
