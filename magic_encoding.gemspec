@@ -16,5 +16,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{2.0.3}
   s.summary = %q{Easily add Rally Copyright information on multiple ruby source files}
-  
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'multipart-post'
+  s.add_development_dependency 'geminabox'
 end
