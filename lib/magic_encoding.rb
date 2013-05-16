@@ -42,7 +42,6 @@ module AddMagicComment
 
         count += 1
         file.pos = 0
-        lines << ""
         file.puts(lines.join)
         file.close
       end
