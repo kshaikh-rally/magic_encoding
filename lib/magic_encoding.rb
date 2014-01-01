@@ -26,6 +26,8 @@ module AddMagicComment
         file = File.new(filename, "r+")
 
         lines = file.readlines
+        next if lines.empty?
+        
         hash_bang = lines[0] if lines[0][/^#!/]
         encoding = lines[0] if lines[0][/^#.*encoding.*/i]
 
