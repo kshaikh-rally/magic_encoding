@@ -11,7 +11,7 @@ module AddMagicComment
 
     # defaults
     directory = options[0] || Dir.pwd
-    prefix = "Copyright 2001-2013 Rally Software Development Corp. All Rights Reserved.\n"
+    prefix = "Copyright 2001-2014 Rally Software Development Corp. All Rights Reserved.\n"
 
     # TODO : add options for recursivity (and application of the script to a single file)
 

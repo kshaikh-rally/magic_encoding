@@ -3,7 +3,7 @@ require 'date'
 
 Gem::Specification.new do |s|
   s.name = %q{magic_encoding}
-  s.version = "0.0.6"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rally Software Development Corp"]
