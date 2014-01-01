@@ -1,5 +1,4 @@
-# Copyright 2001-2013 Rally Software Development Corp. All Rights Reserved.
-# A simple library to prepend magic comments for encoding to multiple ".rb" files
+# Copyright 2001-2014 Rally Software Development Corp. All Rights Reserved.
 
 module AddMagicComment
 
