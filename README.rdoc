@@ -15,7 +15,7 @@ you can call the tool from the console with default parameters like so
 
 this will prepend every ".rb" file in the working directory (recursively) with the following line :
 
-  # Copyright 2001-2013 Rally Software Development Corp. All Rights Reserved.
+  # Copyright 2001-2014 Rally Software Development Corp. All Rights Reserved.
 
 Notes : 
 - existing magic copyrights are replaced
@@ -32,6 +32,6 @@ gem build magic_encoding.gemspec
 
 == Publish the Gem to Geminabox
   gem install geminabox --source http://int-ububld1:9292
-  gem inabox -g http://int-ububld1:9292 magic_encoding-0.0.5.gem -o
+  gem inabox -g http://int-ububld1:9292 magic_encoding-*.gem -o
 
 Be sure to increment the Gem version if a new version is built.
